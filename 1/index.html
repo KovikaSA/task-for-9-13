@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="module">
+        import * as mod from './ucFirst.js';
+        document.body.innerHTML = mod.ucFirst('aBsCd');
+        document.body.innerHTML = mod.withSpace('Вот пример строки,в которой используются знаки препинания. После знаков должны стоять пробелы, а перед знаками их быть не должно. Если есть лишние подряд идущие пробелы, они должны быть устранены.');
+        document.body.innerHTML = mod.unique('Текст, в котором слово текст несколько раз встречается и слово тоже');
+    </script>
+
+</body>
+
+</html>
